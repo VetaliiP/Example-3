@@ -236,7 +236,7 @@
         height: 424px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     #INTRO{
         height: 565px;
         margin-top: 30px;
