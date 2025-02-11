@@ -302,7 +302,7 @@
         line-height: 27px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     #PRICING{
         margin-top: 84px;
     }
