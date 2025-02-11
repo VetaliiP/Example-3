@@ -1,0 +1,374 @@
+#PRICING{
+    width: auto;
+    height: 720px;
+
+    margin-top: 188px;
+    /* margin-left: 8%;
+    margin-right: 8%; */
+}
+#PRICING{
+    display: flex;
+    flex-direction: column;
+}
+.pricing-title{
+    width: 100%;
+    height: 137px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pricing-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+
+    color: #000000;
+}
+.pricing-box{
+    width: 100%;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pricing-box > div{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.pricing-product-img{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.pricing-product-1 .pricing-product-img{
+    width: 311px;
+    height: 311px;
+
+    margin: 0 auto;
+
+    background-image:url('/img/pricing-img-1.png') ;
+}
+.pricing-product-2 .pricing-product-img{
+    width: 100%;
+    height: 283px;
+
+    margin-top: 26px;
+
+    background-image:url('/img/pricing-img-2.png') ;
+}
+.pricing-product-3 .pricing-product-img{
+    width: 340px;
+    height: 340px;
+
+    margin: 0 auto;
+
+    background-image:url('/img/pricing-img-3.png') ;
+}
+.pricing-product-text-block{
+    width: 100%;
+    height: 231px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pricing-product-title p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+
+    color: #263238;
+}
+.pricing-product-text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #8F95A5;
+}
+.pricing-product-price{
+    width: 240px;
+    height: 45px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 5px;
+
+    background-color: rgba(238, 238, 238, 1);
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+.pricing-product-price:hover{
+    background-color: rgb(160, 160, 160);
+    transition: 0.3s;
+}
+.pricing-product-price p:nth-child(1){
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+
+    color: #263238;
+}
+.pricing-product-price p:nth-child(2){
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #546269;
+}
+@media screen and (max-width: 1000px) {
+    #PRICING{
+        width: 100%;
+        height: 540px;
+    
+        margin-top: 125px;
+    }
+    .pricing-title{
+        width: 100%;
+        height: 127px;
+
+        font-size: 36px;
+    }
+    .pricing-product-1 .pricing-product-img{
+        width: 222px;
+        height: 222px;
+    }
+    .pricing-product-2 .pricing-product-img{
+        width: 267px;
+        height: 195px;
+    
+        margin-top: 25px;
+    }
+    .pricing-product-3 .pricing-product-img{
+        width: 242px;
+        height: 242px;
+    }
+    .pricing-product-text-block{
+        height: 196px;
+    }    
+    .pricing-product-title p{
+        font-size: 22px;
+        line-height: 34px;
+    }
+    .pricing-product-text p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .pricing-product-price p:nth-child(1){
+        font-size: 24px;
+        line-height: 45px;
+    }
+    .pricing-product-price p:nth-child(2){
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #PRICING{
+        width: 100%;
+        height: 554px;
+    
+        margin-top: 88px;
+    }
+    .pricing-title{
+        width: 100%;
+        height: 127px;
+
+        font-size: 30px;
+    }
+    .pricing-product-1 .pricing-product-img{
+        width: 197px;
+        height: 197px;
+    }
+    .pricing-product-2 .pricing-product-img{
+        width: 219px;
+        height: 168px;
+    
+        margin-top: 30px;
+    }
+    .pricing-product-3 .pricing-product-img{
+        width: 210px;
+        height: 210px;
+    }
+    .pricing-product-text-block{
+        height: 196px;
+    }    
+    .pricing-product-title p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .pricing-product-text p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .pricing-product-price p:nth-child(1){
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .pricing-product-price p:nth-child(2){
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+@media screen and (max-width: 575px) {
+    #PRICING{
+        width: 100%;
+        height: auto;
+    
+        margin-top: 131px;
+    }
+    .pricing-title{
+        width: 100%;
+        height: 134px;
+
+        font-size: 30px;
+    }
+    .pricing-box{
+        height: auto;
+        flex-grow: 0;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+    .pricing-box > div{
+        width: 75%;
+        height: auto;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+    .pricing-box > div > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .pricing-product-1 .pricing-product-img{
+        width: 291px;
+        height: 291px;
+    }
+    .pricing-product-2 .pricing-product-img{
+        width: 314px;
+        height: 241px;
+    
+        margin-top: 0;
+    }
+    .pricing-product-3 .pricing-product-img{
+        width: 253px;
+        height: 253px;
+    }
+    .pricing-product-text-block{
+        height: 196px;
+    }    
+    .pricing-product-title p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .pricing-product-text p{
+        font-size: 14px;
+        line-height: 20px;
+
+        text-align: center;
+    }
+    .pricing-product-price{
+        width: 205px;
+        height: 45px;
+    }    
+    .pricing-product-price p:nth-child(1){
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .pricing-product-price p:nth-child(2){
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #PRICING{
+        margin-top: 84px;
+    }
+    .pricing-title{
+        width: 100%;
+        height: 120px;
+
+        font-size: 24px;
+    }
+    .pricing-box{
+        height: auto;
+        flex-grow: 0;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+    .pricing-box > div{
+        width: 75%;
+        height: auto;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+    .pricing-box > div > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .pricing-product-1 .pricing-product-img{
+        width: 248px;
+        height: 248px;
+    }
+    .pricing-product-2 .pricing-product-img{
+        width: 257px;
+        height: 197px;
+    }
+    .pricing-product-3 .pricing-product-img{
+        width: 241px;
+        height: 241px;
+    }
+    .pricing-product-text-block{
+        height: 196px;
+    }    
+    .pricing-product-title p{
+        font-size: 18px;
+        line-height: 28px;
+
+        text-align: center;
+    }
+    .pricing-product-text p{
+        font-size: 13px;
+        line-height: 20px;
+
+        text-align: center;
+    }
+    .pricing-product-price{
+        width: 205px;
+        height: 45px;
+    }    
+    .pricing-product-price p:nth-child(1){
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .pricing-product-price p:nth-child(2){
+        font-size: 16px;
+        line-height: 27px;
+    }
+}

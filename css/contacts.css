@@ -1,0 +1,293 @@
+#CONTACTS{
+    width: auto;
+    height: 430px;
+
+    margin-top: 260px;
+    /* margin-left: 8%;
+    margin-right: 8%; */
+}
+.contacts-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contacts-title-mobile{
+    display: none;
+}
+.contacts-container-left{
+    width: 477px;
+    height: 429px;
+
+    background-image: url('/img/contacts-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.contacts-container-right{
+    width: 720px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.contacts-title p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+
+    color: #000000;
+}
+.contacts-text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #8F95A5;
+}
+.contacts-input{
+    width: 100%;
+    height: 82px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+input[type='email']{
+    width: 450px;
+    height: 80px;
+
+    border: 1px solid rgba(143, 149, 165, 1);
+    border-radius: 5px;
+
+    padding-left: 33px;
+    margin-right: 12px;
+
+    outline: none;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #8F95A5;
+}
+.contacts-input-btn{
+    width: 264px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(38, 50, 56, 1);
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+.contacts-input-btn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+
+    transition: 0.3s;
+}
+.contacts-input-btn:hover{
+    background-color: #FFFFFF;
+    color: rgba(38, 50, 56, 1);
+    border: 1px solid rgba(38, 50, 56, 1); 
+    transition: 0.3s;
+}
+@media screen and (max-width: 1000px) {
+    #CONTACTS{
+        width: 100%;
+        height: 281px;
+    
+        margin-top: 145px;
+    }
+    .contacts-container-left{
+        width: 312px;
+        height: 281px;
+    }
+    .contacts-container-right{
+        width: 530px;
+    }    
+    .contacts-title p{
+        font-size: 36px;
+        line-height: 80px;
+    }
+    .contacts-text p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    input[type='email']{
+        width: 323px;
+        height: 60px;
+    }
+    .contacts-input-btn{
+        width: 193px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #CONTACTS{
+        height: 210px;
+    
+        margin-top: 94px;
+    }
+    .contacts-container-left{
+        width: 233px;
+        height: 210px;
+    }
+    .contacts-container-right{
+        width: 434px;
+    }    
+    .contacts-title p{
+        font-size: 30px;
+        line-height: 80px;
+    }
+    .contacts-text p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    input[type='email']{
+        width: 283px;
+        height: 50px;
+    }
+    .contacts-input-btn{
+        width: 145px;
+        height: 50px;
+
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    #CONTACTS{
+        height: 548px;
+    
+        margin-top: 163px;
+    }
+    .contacts-container{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+
+    }
+    .contacts-title-mobile{
+        display: flex;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 80px;
+
+        color: #000000;
+    }
+    .contacts-title{
+        display: none;
+    }
+    .contacts-container-left{
+        width: 358px;
+        height: 322px;
+    }
+    .contacts-container-right{
+        width: 434px;
+    }    
+    .contacts-title p{
+        font-size: 30px;
+        line-height: 80px;
+    }
+    .contacts-text p{
+        font-size: 14px;
+        line-height: 24px;
+
+        text-align: center;
+    }
+    input[type='email']{
+        width: 283px;
+        height: 50px;
+    }
+    .contacts-input-btn{
+        width: 145px;
+        height: 50px;
+
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #CONTACTS{
+        height: 626px;
+    
+        margin-top: 72px;
+    }
+    .contacts-container{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+
+    }
+    .contacts-title-mobile{
+        height: 118px;
+
+        font-size: 24px;
+    }
+    .contacts-title{
+        display: none;
+    }
+    .contacts-container-left{
+        width: 253px;
+        height: 228px;
+    }
+    .contacts-container-right{
+        width: 100%;
+    }    
+    .contacts-title p{
+        font-size: 30px;
+        line-height: 80px;
+    }
+    .contacts-text p{
+        font-size: 14px;
+        line-height: 24px;
+
+        text-align: center;
+    }
+    .contacts-input{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input[type='email']{
+        width: 100%;
+        height: 50px;
+        
+        margin: 0;
+    }
+    .contacts-input-btn{
+        width: 100%;
+        height: 60px;
+
+        font-size: 13px;
+        line-height: 20px;
+
+        margin-top: 15px;
+    }
+}

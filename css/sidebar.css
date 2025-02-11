@@ -1,0 +1,120 @@
+
+.sidebar {
+    height: 100%; /* 100% высоты экрана */
+    width: 0; /* Начальная ширина 0 */
+    position: fixed; /* Фиксированное положение */
+    z-index: 2; /* На переднем плане */
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF; /* Темный фон */
+    overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+    transition: 0.3s; /* Плавное открытие и закрытие */
+}
+.sidebar-logo{
+    width: auto;
+    height: 105px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(196, 196, 196, 1);
+
+    margin-left: 39px;
+    margin-right: 30px;
+}
+.sidebar-logo .logo{
+    width: 89px;
+    height: 45px;
+
+    background-image: url('/img/Britlex-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    cursor: pointer;
+}
+.sidebar a {
+    padding: 8px 8px 8px 39px;
+    text-decoration: none;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 60px;
+
+    color: #263238;
+
+    display: block;
+    transition: 0.1s;
+}
+
+.sidebar > a:not(:first-child):hover {
+    background-color: rgba(38, 50, 56, 1);
+    color: #FFFFFF;
+    transition: 0.1s;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+
+    color: rgba(57, 81, 94, 1);
+}
+.sidebar-talk{
+    width: 210px;
+    height: 60px;
+
+    border: 1px solid rgba(38, 50, 56, 1);
+    border-radius: 5px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;  
+}
+.sidebar-talk{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+
+    margin-top: 62px;
+    margin-left: 39px;
+
+    color: #000000;
+
+    transition: 0.3s;
+}
+.sidebar-talk:hover{
+    background-color:rgba(38, 50, 56, 1);
+    color:#FFFFFF;
+    transition: 0.3s;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с прозрачностью 50% */
+    z-index: 1; /* Позади сайдбара */
+    display: none; /* Скрыть по умолчанию */
+    transition: 0.5s;
+}
+@media screen and (max-width: 575px) {
+    .sidebar-talk{
+        width: 310px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .sidebar-talk{
+        width: 75%;
+    }
+}

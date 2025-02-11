@@ -1,0 +1,428 @@
+#SKILLS{
+    width: auto;
+    height: 1070px;
+
+    margin-top: 103px;
+
+    display: flex;
+    flex-direction: column;
+}
+.skills-title{
+    width: 100%;
+    height: 176px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.skills-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+
+    color: #000000;
+}
+.skills-box{
+    width: 100%;
+    /* height: 894px; */
+    flex-grow: 1;
+
+    display: grid;
+    column-gap:18px;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "sp sp wr wr re re"
+      "sp sp wr wr re re"
+      "sp sp wr wr re re"
+      "sp sp li li li li"
+      "sp sp li li li li";
+}
+.skills-box > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    background-color: rgba(245, 245, 245, 1) ;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+.speaking{
+    grid-area: sp;
+}
+.writing{
+    grid-area: wr;
+}
+.reading{
+    grid-area: re;
+}
+.listening{
+    grid-area: li;
+}
+.skills-box-img{
+    width: 100%;
+    flex-grow: 1;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.speaking .skills-box-img{
+    max-height: 390px;
+
+    background-position: center;
+    background-image: url('/img/speaking-img.png');
+}
+.writing .skills-box-img{
+    position: absolute;
+    width: 100%;
+    height: 293px;
+    /* max-width: 293px; */
+    max-height: 293px;
+    right: 0;
+    top: 0;
+    background-position: right;
+    background-image: url('/img/writing-img.png');
+}
+.reading .skills-box-img{
+    background-position: left;
+    background-image: url('/img/reading-img.png');
+}
+.listening .skills-box-img{
+    position: absolute;
+    width: 328px;
+    height: 255px;
+
+    right: 23px;
+    top: 13%;
+
+    background-position: center;
+    background-image: url('/img/listening-img.png');
+}
+.listening .skills-box-text{
+    width: 320px;
+}
+.skills-box-title, .skills-box-text, .skills-box-btn{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.skills-box-title{
+    width: auto;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+
+    color: #263238;
+}
+.skills-box-text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #8F95A5;
+}
+.skills-box-btn{
+    width: 230px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 40px;
+    margin-top: 35px;
+
+    border-radius: 5px;
+
+    background-color: rgba(38, 50, 56, 1);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+.skills-box-btn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #FFFFFF;
+}
+.skills-box-btn:hover{
+    color: rgba(38, 50, 56, 1);
+    background-color: #FFFFFF;
+    border: 1px solid rgba(38, 50, 56, 1);
+
+    transition: 0.3s;
+}
+@media screen and (max-width: 1000px) {
+    .skills-title{
+        height: 138px;
+
+        font-size: 36px;
+        line-height: 80px;
+    }
+    .skills-box{
+        height: 696px;
+        gap: 13px;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "sp sp wr wr re re"
+        "sp sp wr wr re re"
+        "sp sp wr wr re re"
+        "sp sp wr wr re re"
+        "sp sp li li li li"
+        "sp sp li li li li";
+    }   
+    .speaking .skills-box-img{
+        min-width: 260px;
+        min-height: 260px;
+    }    
+    .writing .skills-box-img{
+        position: relative;
+        width: 100%;
+        height: 205px;
+        min-width: 205px;
+        min-height: 205px;
+
+        background-position: right;
+    }
+    .reading .skills-box-img{
+        min-width: 243px;
+        min-height: 162px;
+    }
+    .listening .skills-box-img{
+        width: 254px;
+        height: 169px;
+        min-width: 254px;
+        min-height: 169px;
+    }
+    .skills-box-title{
+        font-size: 22px;
+        line-height: 80px;
+    }
+    .skills-box-text p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .skills-box-btn{
+        width: 196px;
+        height: 57px;
+        min-height: 57px;
+
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }    
+    .skills-box-title, .skills-box-text, .skills-box-btn{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    #SKILLS{
+        width: 100%;
+        height: 778px;
+    
+        margin-top: 56px;
+    }
+    .skills-title{
+        height: 116px;
+
+        font-size: 30px;
+        line-height: 80px;
+    }
+    .skills-box{
+        height: 662px;
+
+        display: grid;
+
+        gap: 10px;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "sp sp wr wr re re"
+        "sp sp wr wr re re"
+        "sp sp wr wr re re"
+        "sp sp wr wr re re"
+        "sp sp li li li li"
+        "sp sp li li li li";
+    }   
+    .speaking .skills-box-img{
+        min-width: 214px;
+        min-height: 214px;
+    }    
+    .writing .skills-box-img{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        min-width: 200px;
+        min-height: 200px;
+
+        background-position: center;
+    }
+    .reading .skills-box-img{
+        min-width: 216px;
+        min-height: 144px;
+    }
+    .listening .skills-box-img{
+        width: 202px;
+        height: 134px;
+        min-width: 202px;
+        min-height: 134px;
+
+        right: 12px;
+        top: 28%;
+    }
+    .listening .skills-box-text{
+        width: 256px;
+    }
+    .skills-box-title{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .skills-box-text p{
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .skills-box-btn{
+        width: 178px;
+        height: 50px;
+        min-height: 50px;
+
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }    
+    .skills-box-title, .skills-box-text, .skills-box-btn{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #SKILLS{
+        width: 100%;
+        height: auto;
+    
+        margin-top: 96px;
+    }
+    .skills-title{
+        height: 114px;
+
+        font-size: 30px;
+        line-height: 80px;
+    }
+    .skills-box{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        gap:10px;
+    }   
+    .skills-box > div{
+        width: 240px;
+        height: 534px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        background-color: rgba(245, 245, 245, 1) ;
+    
+        border-radius: 10px;
+    
+        position: relative;
+    }
+    .skills-box-img{
+        flex-grow: 0;
+    }
+    .speaking .skills-box-img{
+        min-width: 185px;
+        min-height: 185px;
+    }    
+    .writing .skills-box-img{
+        position: relative;
+        width: 100%;
+        height: 182px;
+        min-width: 182px;
+        min-height: 182px;
+
+        background-position: center;
+    }
+    .reading .skills-box-img{
+        min-width: 198px;
+        min-height: 132px;
+    }
+    .listening .skills-box-img{
+        position: relative;
+
+        width: 206px;
+        height: 137px;
+        min-width: 206px;
+        min-height: 137px;
+
+        top: 0;
+        right: 0;
+       
+    }
+    .listening .skills-box-text{
+        width: 85%;
+        
+    }
+    .skills-box-title{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .skills-box-text{
+        flex-grow: 1;
+    }
+    .skills-box-text p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .skills-box-btn{
+        width: 178px;
+        height: 50px;
+
+        
+        min-height: 50px;
+
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }    
+}
+@media screen and (max-width: 320px) {
+    #SKILLS{
+        margin-top: 51px;
+    }
+    .skills-title{
+        height: 120px;
+
+        font-size: 24px;
+        line-height: 80px;
+    }
+}
